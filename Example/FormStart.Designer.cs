@@ -32,7 +32,7 @@
             // 
             // pfContent
             // 
-            this.pfContent.Size = new System.Drawing.Size(290, 236);
+            this.npContent.Size = new System.Drawing.Size(290, 236);
             // 
             // FormStart
             // 

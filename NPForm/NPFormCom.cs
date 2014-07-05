@@ -80,7 +80,6 @@ namespace NPForm
             }
         }
 
-
         #region 窗体大小调整WND消息处理        
         protected override void WndProc(ref Message m)
         {
@@ -171,11 +170,11 @@ namespace NPForm
                 this.isShowMaxBox = value;
                 if (value)
                 {
-                    this.pbMax.Visible = true;
+                    this.maxBtn.Visible = true;
                 }
                 else
                 {
-                    this.pbMax.Visible = false;
+                    this.maxBtn.Visible = false;
                 }
             }
         }
@@ -242,11 +241,11 @@ namespace NPForm
                 this.isShowMinBox = value;
                 if (value)
                 {
-                    this.pbMin.Visible = true;
+                    this.minBtn.Visible = true;
                 }
                 else
                 {
-                    this.pbMin.Visible = false;
+                    this.minBtn.Visible = false;
                 }
             }
         }
@@ -378,17 +377,17 @@ namespace NPForm
         {
             get
             {
-                if (this.pfCtrlMenu != null)
+                if (this.npCtrlMenu != null)
                 {
-                    return this.pfCtrlMenu.BackColor;
+                    return this.npCtrlMenu.BackColor;
                 }
                 return Color.Blue;
             }
             set
             {
-                if (this.pfCtrlMenu != null)
+                if (this.npCtrlMenu != null)
                 {
-                    this.pfCtrlMenu.BackColor = value;
+                    this.npCtrlMenu.BackColor = value;
                 }
             }
         }
@@ -425,19 +424,19 @@ namespace NPForm
                 switch (tagFlag)
                 {
                     case 0X0001:
-                        this.pbClose.Image = Properties.RControlBar.close_2;   
+                        this.closeBtn.Image = Properties.Resources.close_2;   
                         break;
                     case 0X0002:
-                        this.pbMax.Image = Properties.RControlBar.max_2;
+                        this.maxBtn.Image = Properties.Resources.max_2;
                         break;
                     case 0X0003:
-                        this.pbMin.Image = Properties.RControlBar.min_2;
+                        this.minBtn.Image = Properties.Resources.min_2;
                         break;
                     case 0X0004:
-                        this.pbTop.Image = this.TopMost ? Properties.RControlBar.top_2_1 : Properties.RControlBar.top_2;
+                        this.topBtn.Image = this.TopMost ? Properties.Resources.top_2_1 : Properties.Resources.top_2;
                         break;
                     case 0X0005:
-                        this.pbMenu.Image = Properties.RControlBar.menu_2;
+                        this.menuBtn.Image = Properties.Resources.menu_2;
                         break;
                 }
             }                     
@@ -467,19 +466,19 @@ namespace NPForm
                 switch (tagFlag)
                 {
                     case 0X0001:
-                        this.pbClose.Image = Properties.RControlBar.close_1;
+                        this.closeBtn.Image = Properties.Resources.close_1;
                         break;
                     case 0X0002:
-                        this.pbMax.Image = Properties.RControlBar.max_1;
+                        this.maxBtn.Image = Properties.Resources.max_1;
                         break;
                     case 0X0003:
-                        this.pbMin.Image = Properties.RControlBar.min_1;
+                        this.minBtn.Image = Properties.Resources.min_1;
                         break;
                     case 0X0004:
-                        this.pbTop.Image = this.TopMost ? Properties.RControlBar.top_1_1 : Properties.RControlBar.top_1;
+                        this.topBtn.Image = this.TopMost ? Properties.Resources.top_1_1 : Properties.Resources.top_1;
                         break;
                     case 0X0005:
-                        this.pbMenu.Image = Properties.RControlBar.menu_1;
+                        this.menuBtn.Image = Properties.Resources.menu_1;
                         break;
                 }
             }             
@@ -509,19 +508,19 @@ namespace NPForm
                 switch (tagFlag)
                 {
                     case 0X0001:
-                        this.pbClose.Image = Properties.RControlBar.close_3;
+                        this.closeBtn.Image = Properties.Resources.close_3;
                         break;
                     case 0X0002:
-                        this.pbMax.Image = Properties.RControlBar.max_3;  
+                        this.maxBtn.Image = Properties.Resources.max_3;  
                         break;
                     case 0X0003:
-                        this.pbMin.Image = Properties.RControlBar.min_3;
+                        this.minBtn.Image = Properties.Resources.min_3;
                         break;
                     case 0X0004:
-                        this.pbTop.Image = this.TopMost ? Properties.RControlBar.top_3_1 : Properties.RControlBar.top_3;
+                        this.topBtn.Image = this.TopMost ? Properties.Resources.top_3_1 : Properties.Resources.top_3;
                         break;
                     case 0X0005:
-                        this.pbMenu.Image = Properties.RControlBar.menu_3;
+                        this.menuBtn.Image = Properties.Resources.menu_3;
                         break;
                 }
             }            
@@ -555,14 +554,14 @@ namespace NPForm
                         break;
                     case 0X0002:
                         this.MaxWindow();
-                        this.pbMax.Image = Properties.RControlBar.max_1;
+                        this.maxBtn.Image = Properties.Resources.max_1;
                         break;
                     case 0X0003:
                         this.WindowState = FormWindowState.Minimized;
                         break;
                     case 0X0004:
                         this.TopMost = !this.TopMost;
-                        this.pbTop.Image = this.TopMost ? Properties.RControlBar.top_1_1 : Properties.RControlBar.top_1;
+                        this.topBtn.Image = this.TopMost ? Properties.Resources.top_1_1 : Properties.Resources.top_1;
                         break;
                     case 0X0005:
                         if (this.SysMenuClick != null)
