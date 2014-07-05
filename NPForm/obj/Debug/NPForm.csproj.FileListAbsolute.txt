@@ -1,0 +1,9 @@
+D:\SYNC\Projects\CSharp\NPControl\NPForm\bin\Debug\NPForm.dll
+D:\SYNC\Projects\CSharp\NPControl\NPForm\bin\Debug\NPForm.pdb
+D:\SYNC\Projects\CSharp\NPControl\NPForm\obj\Debug\ResolveAssemblyReference.cache
+D:\SYNC\Projects\CSharp\NPControl\NPForm\obj\Debug\NPForm.NPForm.resources
+D:\SYNC\Projects\CSharp\NPControl\NPForm\obj\Debug\NPForm.Properties.RControlBar.resources
+D:\SYNC\Projects\CSharp\NPControl\NPForm\obj\Debug\ResGen.read.1.tlog
+D:\SYNC\Projects\CSharp\NPControl\NPForm\obj\Debug\ResGen.write.1.tlog
+D:\SYNC\Projects\CSharp\NPControl\NPForm\obj\Debug\NPForm.dll
+D:\SYNC\Projects\CSharp\NPControl\NPForm\obj\Debug\NPForm.pdb

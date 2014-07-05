@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F42D1F3F-893C-4C5D-BDB0-69DDE13F57A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NPForm</RootNamespace>
+    <AssemblyName>NPForm</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoreLib\WIN32API.cs" />
+    <Compile Include="NPFormCom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NPFormCom.designer.cs">
+      <DependentUpon>NPFormCom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\RControlBar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RControlBar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\FormUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NPFormCom.resx">
+      <DependentUpon>NPFormCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\RControlBar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RControlBar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\control_bar\close_1.png" />
+    <Content Include="Resources\control_bar\close_2.png" />
+    <Content Include="Resources\control_bar\close_3.png" />
+    <Content Include="Resources\control_bar\icon_def.ico" />
+    <Content Include="Resources\control_bar\max_1.png" />
+    <Content Include="Resources\control_bar\max_2.png" />
+    <Content Include="Resources\control_bar\max_3.png" />
+    <Content Include="Resources\control_bar\menu_1.png" />
+    <Content Include="Resources\control_bar\menu_2.png" />
+    <Content Include="Resources\control_bar\menu_3.png" />
+    <Content Include="Resources\control_bar\min_1.png" />
+    <Content Include="Resources\control_bar\min_2.png" />
+    <Content Include="Resources\control_bar\min_3.png" />
+    <Content Include="Resources\control_bar\top_1.png" />
+    <Content Include="Resources\control_bar\top_1_1.png" />
+    <Content Include="Resources\control_bar\top_2.png" />
+    <Content Include="Resources\control_bar\top_2_1.png" />
+    <Content Include="Resources\control_bar\top_3.png" />
+    <Content Include="Resources\control_bar\top_3_1.png" />
+    <Content Include="Resources\control_bar\window_def.PNG" />
+    <None Include="Resources\icon_def.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
