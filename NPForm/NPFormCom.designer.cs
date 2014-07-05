@@ -235,7 +235,6 @@ namespace NPForm
         }
         #endregion
 
-
         private System.Windows.Forms.Label closeBtn;
         private System.Windows.Forms.Label maxBtn;
         private System.Windows.Forms.Label minBtn;
