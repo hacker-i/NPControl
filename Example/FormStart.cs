@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace Example
-{
+{    
     public partial class FormStart : NPForm.NPFormCom
     {
         public FormStart()

@@ -30,17 +30,16 @@
         {
             this.SuspendLayout();
             // 
-            // pfContent
+            // npContent
             // 
-            this.npContent.Size = new System.Drawing.Size(290, 236);
+            this.npContent.Size = new System.Drawing.Size(710, 398);
             // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 273);
-            //Bug
-            this.Location = NPForm.Utils.FormUtils.getFormPosToScreen(this.Height,this.Width);
+            this.ClientSize = new System.Drawing.Size(720, 435);
+            this.Location = new System.Drawing.Point(570, 300);
             this.Name = "FormStart";
             this.ShowTitleIcon = true;
             this.Text = "NPForm";
@@ -49,6 +48,7 @@
         }
 
         #endregion
+
     }
 }
 

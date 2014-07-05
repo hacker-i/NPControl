@@ -12,6 +12,7 @@ namespace NPForm
     /// Date    : 2014-6-27
     /// E-mail  : hacker_i@foxmail.com
     /// </summary>
+    [ToolboxBitmap(typeof(NPFormCom), "Resources.forms.NPFormCom.bmp")]
     public partial class NPFormCom : Form
     {  
         private int borderSize = 7;             // 处理缩放触发边框像素大小

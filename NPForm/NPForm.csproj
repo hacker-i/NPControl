@@ -40,6 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\NPButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NPDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NPListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NPTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CoreLib\WIN32API.cs" />
     <Compile Include="NPFormCom.cs">
       <SubType>Form</SubType>
@@ -64,28 +76,29 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="Resources\control_bar\close_1.png" />
-    <Content Include="Resources\control_bar\close_2.png" />
-    <Content Include="Resources\control_bar\close_3.png" />
-    <Content Include="Resources\control_bar\icon_def.ico" />
-    <Content Include="Resources\control_bar\max_1.png" />
-    <Content Include="Resources\control_bar\max_2.png" />
-    <Content Include="Resources\control_bar\max_3.png" />
-    <Content Include="Resources\control_bar\menu_1.png" />
-    <Content Include="Resources\control_bar\menu_2.png" />
-    <Content Include="Resources\control_bar\menu_3.png" />
-    <Content Include="Resources\control_bar\min_1.png" />
-    <Content Include="Resources\control_bar\min_2.png" />
-    <Content Include="Resources\control_bar\min_3.png" />
-    <Content Include="Resources\control_bar\top_1.png" />
-    <Content Include="Resources\control_bar\top_1_1.png" />
-    <Content Include="Resources\control_bar\top_2.png" />
-    <Content Include="Resources\control_bar\top_2_1.png" />
-    <Content Include="Resources\control_bar\top_3.png" />
-    <Content Include="Resources\control_bar\top_3_1.png" />
-    <Content Include="Resources\control_bar\window_def.PNG" />
+    <Folder Include="Resources\Controls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Control_bar\close_1.png" />
+    <Content Include="Resources\Control_bar\close_2.png" />
+    <Content Include="Resources\Control_bar\close_3.png" />
+    <Content Include="Resources\Control_bar\max_1.png" />
+    <Content Include="Resources\Control_bar\max_2.png" />
+    <Content Include="Resources\Control_bar\max_3.png" />
+    <Content Include="Resources\Control_bar\menu_1.png" />
+    <Content Include="Resources\Control_bar\menu_2.png" />
+    <Content Include="Resources\Control_bar\menu_3.png" />
+    <Content Include="Resources\Control_bar\min_1.png" />
+    <Content Include="Resources\Control_bar\min_2.png" />
+    <Content Include="Resources\Control_bar\min_3.png" />
+    <Content Include="Resources\Control_bar\top_1.png" />
+    <Content Include="Resources\Control_bar\top_1_1.png" />
+    <Content Include="Resources\Control_bar\top_2.png" />
+    <Content Include="Resources\Control_bar\top_2_1.png" />
+    <Content Include="Resources\Control_bar\top_3.png" />
+    <Content Include="Resources\Control_bar\top_3_1.png" />
+    <EmbeddedResource Include="Resources\Forms\NPFormCom.bmp" />
     <None Include="Resources\window_def.PNG" />
     <None Include="Resources\icon_def.ico" />
   </ItemGroup>
