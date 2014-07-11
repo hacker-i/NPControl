@@ -271,7 +271,7 @@ namespace NPForm
         }
 
         /// <summary>
-        /// 窗体左上角图标设置
+        /// 窗体左上角图标资源
         /// </summary>
         public new Icon Icon
         {
@@ -290,10 +290,9 @@ namespace NPForm
         }
 
         /// <summary>
-        /// 提供设置窗体标题栏图标的属性
+        /// 是否显示左上角图标
         /// </summary>
-        [CategoryAttribute("标题栏图标"), Description("设置窗体标题栏是否显示图标")]
-        public bool ShowTitleIcon
+        public new bool ShowIcon
         {
             get
             {
@@ -308,6 +307,59 @@ namespace NPForm
                 if (this.pbIcon != null)
                 {
                     this.pbIcon.Visible = value;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 是否显示窗口置顶按钮
+        /// </summary>
+        [CategoryAttribute("是否显示置顶按钮"), Description("设置窗体置顶")]
+        public bool IsShowTopButton 
+        {
+            set 
+            {
+                if (this.topBtn != null)
+                {
+                    this.topBtn.Visible = value;
+                }
+            }
+            get
+            {
+                if (this.topBtn != null)
+                {
+                    return this.topBtn.Visible;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 是否显示窗体菜单按钮
+        /// </summary>
+        [CategoryAttribute("是否显示窗体菜单按钮"), Description("窗体菜单按钮")]
+        [EditorAttribute(typeof(bool), typeof(bool))] 
+        public bool IsShowMenuButton
+        {
+            set
+            {
+                if (this.menuBtn != null)
+                {
+                    this.menuBtn.Visible = value;
+                }
+            }
+            get
+            {
+                if (this.menuBtn != null)
+                {
+                    return this.menuBtn.Visible;
+                }
+                else
+                {
+                    return false;
                 }
             }
         }

@@ -39,9 +39,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(720, 435);
+            this.ShowIcon = false;
             this.Location = new System.Drawing.Point(570, 300);
+            this.MaximizeBox = false;
             this.Name = "FormStart";
-            this.ShowTitleIcon = true;
             this.Text = "NPForm";
             this.ResumeLayout(false);
 
