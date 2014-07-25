@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel;
+using System.Drawing;
 
 namespace NPForm.Controls
 {
@@ -9,7 +10,8 @@ namespace NPForm.Controls
     /// 功能:自定义按钮类
     /// 作者:彭紫梁
     /// 时间:2014-4-14
-    /// </summary>
+    /// </summary>  
+    [ToolboxBitmap("NPButton.bmp")]
     public class NPButton:System.Windows.Forms.Button
     {
         public NPButton() { 

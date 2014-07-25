@@ -32,17 +32,20 @@
             // 
             // npContent
             // 
-            this.npContent.Size = new System.Drawing.Size(710, 398);
+            this.npContent.Size = new System.Drawing.Size(710, 432);
             // 
             // FormStart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 435);
-            this.ShowIcon = false;
+            this.ClientSize = new System.Drawing.Size(720, 471);
+            this.IsShowMenuButton = true;
+            this.IsShowTopButton = true;
             this.Location = new System.Drawing.Point(570, 300);
-            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1366, 800);
+            this.MinimumSize = new System.Drawing.Size(300, 82);
             this.Name = "FormStart";
+            this.ShowIcon = true;
             this.Text = "NPForm";
             this.ResumeLayout(false);
 

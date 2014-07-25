@@ -52,6 +52,9 @@
     <Compile Include="Controls\NPTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CoreLib\BitmapUtils.cs" />
+    <Compile Include="CoreLib\Chinese2PinYin.cs" />
+    <Compile Include="CoreLib\Command.cs" />
     <Compile Include="CoreLib\WIN32API.cs" />
     <Compile Include="NPFormCom.cs">
       <SubType>Form</SubType>
@@ -80,6 +83,8 @@
     <Folder Include="Resources\Controls\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="NPFormCom.bmp" />
+    <EmbeddedResource Include="Controls\NPButton.bmp" />
     <Content Include="Resources\Control_bar\close_1.png" />
     <Content Include="Resources\Control_bar\close_2.png" />
     <Content Include="Resources\Control_bar\close_3.png" />
@@ -98,7 +103,6 @@
     <Content Include="Resources\Control_bar\top_2_1.png" />
     <Content Include="Resources\Control_bar\top_3.png" />
     <Content Include="Resources\Control_bar\top_3_1.png" />
-    <EmbeddedResource Include="Resources\Forms\NPFormCom.bmp" />
     <None Include="Resources\window_def.PNG" />
     <None Include="Resources\icon_def.ico" />
   </ItemGroup>

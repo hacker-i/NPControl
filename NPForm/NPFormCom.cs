@@ -12,7 +12,7 @@ namespace NPForm
     /// Date    : 2014-6-27
     /// E-mail  : hacker_i@foxmail.com
     /// </summary>
-    [ToolboxBitmap(typeof(NPFormCom), "Resources.forms.NPFormCom.bmp")]
+    [ToolboxBitmap("NPFormCom.bmp")]
     public partial class NPFormCom : Form
     {  
         private int borderSize = 7;             // 处理缩放触发边框像素大小
@@ -314,7 +314,10 @@ namespace NPForm
         /// <summary>
         /// 是否显示窗口置顶按钮
         /// </summary>
-        [CategoryAttribute("是否显示置顶按钮"), Description("设置窗体置顶")]
+        [CategoryAttribute("是否显示置顶按钮")]
+        [DefaultValue(true)]
+        [Description("设置窗体置顶")]
+        [EditorAttribute(typeof(bool), typeof(bool))] 
         public bool IsShowTopButton 
         {
             set 
@@ -341,7 +344,8 @@ namespace NPForm
         /// 是否显示窗体菜单按钮
         /// </summary>
         [CategoryAttribute("是否显示窗体菜单按钮"), Description("窗体菜单按钮")]
-        [EditorAttribute(typeof(bool), typeof(bool))] 
+        [EditorAttribute(typeof(bool), typeof(bool))]
+        [DefaultValue(true)]
         public bool IsShowMenuButton
         {
             set
